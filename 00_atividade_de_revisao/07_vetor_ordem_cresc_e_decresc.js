@@ -10,7 +10,7 @@ function main() {
     }
 
     const numerosOrdCresc = vetor_ordem_cresc(numeros)
-    const numerosOrdDecresc = inv_ordem_vetor(numerosOrdCresc)
+    const numerosOrdDecresc = vetor_ordem_inv(numerosOrdCresc)
 
 
     console.log(`\nOrdem crescente: (${numerosOrdCresc})\nOrdem decrescente: (${numerosOrdDecresc})`)
@@ -34,7 +34,7 @@ function vetor_ordem_cresc(vetor) {
 }
 
 
-function inv_ordem_vetor(vetor) {
+function vetor_ordem_inv(vetor) {
     let vetorAux = []
 
     let j = vetor.length - 1
