@@ -1,1 +1,5 @@
- As classes são modelos a partir dos quais objetos são instanciados, enquadrando-os conforme atributos e métodos. Já um objeto é uma instância de uma classe, ou seja, são classes em execução. A exemplo, uma receita de bolo seria uma classe, enquanto o bolo pronto seria um objeto.
+As classes são modelos a partir dos quais objetos são instanciados, 
+enquadrando-os conforme atributos e métodos. Já um objeto é uma 
+instância de uma classe, ou seja, são classes em execução. A exemplo, 
+uma receita de bolo seria uma classe, enquanto o bolo pronto seria um 
+objeto.
