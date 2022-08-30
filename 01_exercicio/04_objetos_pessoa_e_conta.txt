@@ -1,0 +1,5 @@
+a) Sim, pois assim poderia-se identificar o titular da conta através do atributo "pessoa".
+
+b) Sim, pois assim poderia-se identificar as contas pertecentes a determinado titular a-
+través do atributo "conta". O elemento da programação estruturada que melhor representa-
+ria o conjunto das contas de uma pessoa seria a sequência.
