@@ -1,0 +1,20 @@
+Atributo: peso.
+Sistema em que é importante: competição de luta.
+
+Atributo: tipo de CNH.
+Sistema em que é importante: trânsito.
+
+Atributo: tipo sanguíneo.
+Sistema em que é importante: doação de sangue.
+
+Atributo: Habilidade destra.
+Sistema em que é importante: escola.
+
+Atributo: percentual de gordura.
+Sistema em que é importante: academia.
+
+Atributo: saldo em conta.
+Sistema em que é importante: banco.
+
+Atributo: etnia.
+Sistema em que é importante: senso demográfico.

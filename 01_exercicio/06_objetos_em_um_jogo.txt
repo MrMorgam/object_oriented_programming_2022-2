@@ -1,0 +1,19 @@
+Objeto: personagem.
+Atributos: nome, sexo, tamanho, cor da pele, cor dos olhos, cor dos cabelos.
+Métodos: andar, correr, pular, atacar, defender, falar, interagir.
+
+Objeto: monstro.
+Atributos: tipo, tamanho, nível de dificuldade. 
+Métodos: andar, correr, pular, atacar, defender.
+
+Objeto: baú.
+Atributos: altura, largura, comprimento, cor, conteúdo.
+Métodos: abrir, fechar, restirar conteúdo, guardar conteúdo.
+
+Objeto: mapa.
+Atributos: tamanho, local, direção.
+Métodos: consultar, marcar.
+
+Objeto: poção.
+Atributos: quantidade, efeito, duração, cor.
+Métodos: tomar, lançar.
