@@ -1,5 +1,5 @@
-Os atributos são variáveis que representam um estado ou uma característica de um obje-
-to. Já os métodos são funções que representam comportamentos ou ações de um objeto. As-
-sim, os métodos são responsáveis por modificar os valores dos atributos. A exemplo, um 
-objeto da classe cachorro pode ter como atributos: nome, peso, altura e idade; e ter co-
-mo métodos: andar, correr, latir e brincar.
+Os atributos são variáveis que representam um estado ou característica de um objeto. Já os 
+métodos são funções que representam comportamentos ou ações de um objeto. Dessa forma, os 
+métodos são responsáveis por modificar os valores dos atributos. Por exemplo, um objeto da 
+classe cachorro pode ter como seus atributos: nome, peso, altura e idade; e ter como seus 
+métodos: andar, correr, latir e brincar.
