@@ -1,0 +1,3 @@
+Linguagens de programação com tipagem forte são aquelas que não permitem conversões implí-
+citas entre tipos diferentes. Já as linguagens de programação com tipagem fraca são aque-
+las em que acontece conversão de tipo implicitamente.

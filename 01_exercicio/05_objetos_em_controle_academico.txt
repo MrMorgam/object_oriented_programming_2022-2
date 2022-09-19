@@ -1,1 +1,1 @@
-Aluno, professor, disciplina, nota e presença.
+Aluno, professor, disciplina, nota e frequencia.

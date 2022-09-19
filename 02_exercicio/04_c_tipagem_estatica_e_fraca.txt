@@ -1,0 +1,3 @@
+Dizemos que a linguagem C possui tipagem estática e fraca porque, apesar de fazer a veri-
+ficação dos tipos durante a compilação do código, ela permite a conversão implícita entre
+tipos diferentes.

@@ -1,0 +1,3 @@
+Linguagens de programação que possuem tipagem dinâmica fazem a verificação de tipos duran-
+te o tempo de execução. Nesse caso, um eventual erro de tipagem passaria desapercebido du-
+rante a compilação do código e só seria detectado durante a execução do programa.
