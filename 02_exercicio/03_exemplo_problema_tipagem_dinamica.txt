@@ -1,1 +1,13 @@
-// A fazer
+Um exemplo é quando uma mesma variável aponta para diferentes tipos de objetos dentro do có-
+digo. Em uma linguagem com tipagem dinâmica (como Python), esse tipo de erro só seria acusa-
+do durante o tempo de execução.
+
+Exemplo de código em Python:
+    
+    a = [1, 2, 3]
+    a = 1
+    a[0] = 0
+
+Nesse caso, 'a' é primeiro atribuído como uma lista. Depois é atribuído como um inteiro. Ten-
+tar acessar um índice de 'a' retorna um erro em tempo de execução, pois 'a' foi atribuído por
+último como uma variável inteira.

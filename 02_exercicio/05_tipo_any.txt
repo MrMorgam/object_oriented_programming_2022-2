@@ -1,0 +1,12 @@
+A utilização o tipo 'any' pode ser útil quando não houver uma definição de tipo adequada pa-
+ra o código em que se está trabalhando e não houver outras opções. Por exemplo, podemos uti-
+lizá-lo para uma variável que pode assumir, intencionalmente, mais de um tipo durante o códi-
+go.
+
+Exemplo de código em Typescript:
+
+    let coupon: any;
+
+    coupon = 26;
+    coupon = "DEAL26";
+    coupon = true;

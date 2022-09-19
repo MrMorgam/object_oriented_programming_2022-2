@@ -1,0 +1,2 @@
+Não, pois, em Typescript, não há distinção entre os tipos inteiro e ponto flutuante, sendo 
+ambos abarcados pelo tipo 'number'.
