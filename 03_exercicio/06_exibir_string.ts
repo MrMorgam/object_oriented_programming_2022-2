@@ -1,6 +1,5 @@
 function exibir(...strings: string[]) {
     console.log(strings);
-
 }
 
 

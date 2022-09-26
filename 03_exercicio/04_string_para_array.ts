@@ -7,7 +7,6 @@ function converterArrayParaString(numeros: number[]): string {
             } else {
                 stringNumeros += `${numeros[i]}`;
             }
-
     }
 
     return stringNumeros;

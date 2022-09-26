@@ -15,7 +15,6 @@ function isPrime(number1: number): boolean {
 
         return true;
     }
-    
 }
 
 
