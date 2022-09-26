@@ -7,7 +7,7 @@ function isPrime(number1) {
         return false;
     }
     else {
-        for (var i = 2; i < number1; i++) {
+        for (let i = 2; i < number1; i++) {
             if (isDivisible(number1, i)) {
                 return false;
             }

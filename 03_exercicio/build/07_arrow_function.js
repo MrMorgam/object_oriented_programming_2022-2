@@ -1,6 +1,6 @@
 "use strict";
 function main() {
-    var ola = function () { return console.log('Olá!'); };
+    const ola = () => console.log('Olá!');
     ola();
 }
 main();

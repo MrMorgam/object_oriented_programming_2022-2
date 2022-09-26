@@ -1,7 +1,6 @@
 "use strict";
-function displayGreeting(name, treatmentPronoun) {
-    if (treatmentPronoun === void 0) { treatmentPronoun = "Sr."; }
-    console.log("Bom dia, ".concat(treatmentPronoun, " ").concat(name, "!"));
+function displayGreeting(name, treatmentPronoun = "Sr.") {
+    console.log(`Bom dia, ${treatmentPronoun} ${name}!`);
 }
 function main() {
     displayGreeting("Sávia", "Sra.");

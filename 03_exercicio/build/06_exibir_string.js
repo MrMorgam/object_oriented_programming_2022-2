@@ -1,9 +1,5 @@
 "use strict";
-function exibir() {
-    var strings = [];
-    for (var _i = 0; _i < arguments.length; _i++) {
-        strings[_i] = arguments[_i];
-    }
+function exibir(...strings) {
     console.log(strings);
 }
 function main() {
