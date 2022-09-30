@@ -7,5 +7,4 @@ function main(): void {
     console.log(isEven(1));
 }
 
-
 main();
