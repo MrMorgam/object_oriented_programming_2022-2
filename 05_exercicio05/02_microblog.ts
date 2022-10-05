@@ -63,4 +63,8 @@ class Microblog {
 
         return postagem;
     }
+
+    buscarPostagemMaisCurtida(): Postagem {
+        
+    }
 }

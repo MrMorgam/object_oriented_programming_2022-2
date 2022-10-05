@@ -1,5 +1,5 @@
 function converterArrayParaString(numeros: number[]): string {
-    let stringNumeros = "";
+    let stringNumeros: string = "";
 
         for (let i = 0; i < numeros.length; i++) {
             if (i != numeros.length-1) {

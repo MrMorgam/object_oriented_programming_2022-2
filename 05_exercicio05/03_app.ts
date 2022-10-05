@@ -1,5 +1,5 @@
 import prompt from "prompt-sync";
-import { Conta, Banco } from "./01_banco.ts";
+import { Conta, Banco } from "./01_banco";
 
 
 function main(): void {
