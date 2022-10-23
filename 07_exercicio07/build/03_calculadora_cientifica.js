@@ -16,18 +16,19 @@ var __extends = (this && this.__extends) || (function () {
 })();
 exports.__esModule = true;
 var _02_calculadora_1 = require("./02_calculadora");
+// Foi necessário alterar o modificador de acesso dos operandos de "private" para "protected"
 var CalculadoraCientifica = /** @class */ (function (_super) {
     __extends(CalculadoraCientifica, _super);
     function CalculadoraCientifica(operando1, operando2) {
         return _super.call(this, operando1, operando2) || this;
     }
-    CalculadoraCientifica.prototype.exponenciar = function () {
-        return Math.pow(this.operando1, this.operando2);
+    CalculadoraCientifica.prototype.exponencia = function () {
+        return Math.pow(this._operando1, this._operando2);
     };
     return CalculadoraCientifica;
 }(_02_calculadora_1.Calculadora));
 function main() {
-    var calculadoraCientifica = new CalculadoraCientifica(2, 3);
-    console.log(calculadoraCientifica.exponenciar());
+    var calculadoraCientifica = new CalculadoraCientifica(2, 10);
+    console.log(calculadoraCientifica.exponencia());
 }
 main();
