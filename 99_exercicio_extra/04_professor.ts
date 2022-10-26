@@ -65,6 +65,10 @@ class Professor extends Funcionario {
         this._titulacao = titulacao;
     }
 
+    get titulacao(): string {
+        return this._titulacao;
+    }
+
     public calcularSalarioPrimeiraParcela(): number {
         return this.salario;
     }
