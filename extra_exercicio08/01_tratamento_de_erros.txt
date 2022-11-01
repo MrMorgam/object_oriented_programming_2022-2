@@ -1,0 +1,33 @@
+Existem três tipos mais comuns de tratamento de erros: desconsiderar a operação, exibir mensagem de er-
+ro e exibir código de erro.
+
+Usarei como exemplo o método sacar da classe Conta dos exercícios anteriores: 
+
+    1) Desconsiderando a operação
+        
+        public sacar(valor: number): void {
+            if (this.saldo - valor >= 0) {
+                this._saldo -= valor;
+            }
+        }
+
+    2) Exibindo mensagem de erro
+
+        public sacar(valor: number): void {
+            if (this.saldo - valor >= 0) {
+                this._saldo -= valor;
+            } else {
+                console.log("Saldo insuficiente!")
+            }
+        }
+
+    3) Exibindo código de erro
+
+        public sacar(valor: number): boolean {
+            if (this.saldo - valor >= 0) {
+                this._saldo -= valor;
+                return true;
+            } else {
+                return false;
+            }
+        }

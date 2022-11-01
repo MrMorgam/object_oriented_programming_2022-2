@@ -1,0 +1,4 @@
+Cada uma das três formas de tratamento de erros possui suas limitações. Quando desconsideramos a ope-
+ração, não há como sabermos se a operação foi bem sucedida ou não. Já quando exibimos mensagem de er-
+ro, passamos a ficar muito atrelados à interface de texto. E quando retornamos um código de erro, te-
+mos que testar o valor de retorno para saber qual tipo de erro ocorreu.
