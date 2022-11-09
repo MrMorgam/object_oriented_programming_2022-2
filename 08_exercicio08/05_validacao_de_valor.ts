@@ -1,4 +1,4 @@
-import { ContaInexistenteError } from "./01_classe_excecoes";
+import { ContaInexistenteError, SaldoInsuficienteError, ValorInvalidoError } from "./01_classe_excecoes";
 
 class Conta {
     private _numero: string;
@@ -17,23 +17,25 @@ class Conta {
         return this._numero;
     }
 
+    private validarValor(valor: number): void {
+        if (valor <= 0) {
+            throw new ValorInvalidoError("Valor inválido");
+        } 
+    }
+
     public depositar(valor: number): void {
-        if (valor < 0) {
-            throw new Error("Valor não pode ser negativo");
-        }
+        this.validarValor(valor);
 
         this._saldo += valor;
     }
 
     public sacar(valor: number): void {
-        if (valor < 0) {
-            throw new Error("Valor não pode ser negativo");
-        }
-
-        const saldoAposSaque: number = this.saldo - valor;
+        this.validarValor(valor);
         
+        const saldoAposSaque: number = this.saldo - valor;
+
         if (saldoAposSaque < 0) {
-            throw new Error("Saldo insuficiente");
+            throw new SaldoInsuficienteError("Saldo insuficiente");
         }
 
         this._saldo -= valor;
@@ -42,6 +44,20 @@ class Conta {
     public transferir(valor: number, contaCredito: Conta): void {
         this.sacar(valor);
         contaCredito.depositar(valor);
+    }
+}
+
+class Poupanca extends Conta {
+    private _taxaJuros: number;
+
+    constructor (numero: string, taxaJuros: number) {
+        super(numero);
+
+        this._taxaJuros = taxaJuros;
+    }
+
+    get taxaJuros(): number {
+        return this._taxaJuros;
     }
 }
 
@@ -56,7 +72,23 @@ class Banco {
         this._contas.push(conta);
     }
 
-    private consultarIndice(numero: string): number{
+    public alterar(numero: string, conta: Conta): void {
+        const indiceConta: number = this.consultarIndice(numero);
+        
+        this._contas[indiceConta] = conta;
+    }
+
+    public excluir(numero: string): void {
+        const indiceConta: number = this.consultarIndice(numero);
+
+        for (let i: number = indiceConta; i < this._contas.length; i++) {
+            this._contas[i] = this._contas[i+1];
+        }
+
+        this._contas.pop();
+    }
+
+    private consultarIndice(numero: string): number {
         let indiceContaProcurada: number = -1;
 
         for (let i: number = 0; i < this._contas.length; i++) {
@@ -71,6 +103,12 @@ class Banco {
         }
 
         return indiceContaProcurada;
+    }
+
+    public consultar(numero: string): Conta {
+        const indiceConta: number = this.consultarIndice(numero);
+
+        return this._contas[indiceConta];
     }
 
     public depositar(numero: string, valor: number): void {
@@ -91,17 +129,41 @@ class Banco {
 
         this._contas[indiceContaDebito].transferir(valor, this._contas[indiceContaCredito]);
     }
+
+    public renderJuros(numero: string): void {
+        const indiceConta: number = this.consultarIndice(numero);
+
+        if (this._contas[indiceConta] instanceof Poupanca) {
+            this._contas[indiceConta].depositar(this._contas[indiceConta].saldo * (<Poupanca>this._contas[indiceConta]).taxaJuros);
+        }
+    }
 }
 
 
 function main(): void {
     let conta1: Conta = new Conta("0001");
     let conta2: Conta = new Conta("0002");
+    let conta3: Poupanca = new Poupanca("0003", 0.05);
 
     let banco: Banco = new Banco();
 
     banco.adicionar(conta1);
     banco.adicionar(conta2);
+    banco.adicionar(conta3);
+
+    banco.sacar("0001", 1);
+    /*banco.depositar("0002", 200);
+    banco.depositar("0003", 300);*/
+
+    console.log(banco.consultar("0001"));
+    /*console.log(banco.consultar("0002"));
+    console.log(banco.consultar("0003"));
+
+    banco.excluir("0002");
+
+    console.log(banco.consultar("0001"));
+    console.log(banco.consultar("0002"));
+    console.log(banco.consultar("0003"));*/
 }
 
 
