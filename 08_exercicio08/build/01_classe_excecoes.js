@@ -15,7 +15,7 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 exports.__esModule = true;
-exports.PoupancaInvalidaError = exports.ValorInvalidoError = exports.SaldoInsuficienteError = exports.ContaInexistenteError = void 0;
+exports.ContaJaExistenteError = exports.PoupancaInvalidaError = exports.ValorInvalidoError = exports.SaldoInsuficienteError = exports.ContaInexistenteError = void 0;
 var AplicacaoError = /** @class */ (function (_super) {
     __extends(AplicacaoError, _super);
     function AplicacaoError(message) {
@@ -55,3 +55,11 @@ var PoupancaInvalidaError = /** @class */ (function (_super) {
     return PoupancaInvalidaError;
 }(AplicacaoError));
 exports.PoupancaInvalidaError = PoupancaInvalidaError;
+var ContaJaExistenteError = /** @class */ (function (_super) {
+    __extends(ContaJaExistenteError, _super);
+    function ContaJaExistenteError(message) {
+        return _super.call(this, message) || this;
+    }
+    return ContaJaExistenteError;
+}(AplicacaoError));
+exports.ContaJaExistenteError = ContaJaExistenteError;

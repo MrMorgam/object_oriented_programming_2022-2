@@ -1,4 +1,5 @@
-export { ContaInexistenteError, SaldoInsuficienteError, ValorInvalidoError, PoupancaInvalidaError }
+export { ContaInexistenteError, SaldoInsuficienteError, ValorInvalidoError, 
+         PoupancaInvalidaError, ContaJaExistenteError }
 
 class AplicacaoError extends Error {
     constructor(message: string) {
@@ -25,6 +26,12 @@ class ValorInvalidoError extends AplicacaoError {
 }
 
 class PoupancaInvalidaError extends AplicacaoError {
+    constructor(message: string) {
+        super(message);
+    }
+}
+
+class ContaJaExistenteError extends AplicacaoError {
     constructor(message: string) {
         super(message);
     }
