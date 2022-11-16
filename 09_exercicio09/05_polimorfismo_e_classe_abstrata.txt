@@ -1,0 +1,2 @@
+Esse código de instanciação é possível devido ao polimorfimo. Nesse caso, o array seria composto de ob-
+jetos instanciados de subclassses da classe abstrata FiguraGeometrica.

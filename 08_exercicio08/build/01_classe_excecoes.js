@@ -15,7 +15,7 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 exports.__esModule = true;
-exports.ContaJaExistenteError = exports.PoupancaInvalidaError = exports.ValorInvalidoError = exports.SaldoInsuficienteError = exports.ContaInexistenteError = void 0;
+exports.ContaJaExistenteError = exports.PoupancaInvalidaError = exports.ValorInvalidoError = exports.SaldoInsuficienteError = exports.ContaInexistenteError = exports.AplicacaoError = void 0;
 var AplicacaoError = /** @class */ (function (_super) {
     __extends(AplicacaoError, _super);
     function AplicacaoError(message) {
@@ -23,6 +23,7 @@ var AplicacaoError = /** @class */ (function (_super) {
     }
     return AplicacaoError;
 }(Error));
+exports.AplicacaoError = AplicacaoError;
 var ContaInexistenteError = /** @class */ (function (_super) {
     __extends(ContaInexistenteError, _super);
     function ContaInexistenteError(message) {

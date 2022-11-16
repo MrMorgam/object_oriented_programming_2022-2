@@ -15,6 +15,7 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 exports.__esModule = true;
+exports.Banco = exports.Poupanca = exports.Conta = void 0;
 var _01_classe_excecoes_1 = require("./01_classe_excecoes");
 var Conta = /** @class */ (function () {
     function Conta(numero) {
@@ -58,6 +59,7 @@ var Conta = /** @class */ (function () {
     };
     return Conta;
 }());
+exports.Conta = Conta;
 var Poupanca = /** @class */ (function (_super) {
     __extends(Poupanca, _super);
     function Poupanca(numero, taxaJuros) {
@@ -74,6 +76,7 @@ var Poupanca = /** @class */ (function (_super) {
     });
     return Poupanca;
 }(Conta));
+exports.Poupanca = Poupanca;
 var Banco = /** @class */ (function () {
     function Banco() {
         this._contas = [];
@@ -144,6 +147,7 @@ var Banco = /** @class */ (function () {
     };
     return Banco;
 }());
+exports.Banco = Banco;
 function main() {
     var conta1 = new Conta("0001");
     var conta2 = new Conta("0001");

@@ -1,0 +1,1 @@
+É necessário que haja a implementação do método abstrato imprimaAlgo() na classe concreta herdeira.

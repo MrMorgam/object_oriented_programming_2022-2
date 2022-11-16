@@ -1,6 +1,8 @@
 import { ContaInexistenteError, SaldoInsuficienteError, ValorInvalidoError, 
          PoupancaInvalidaError, ContaJaExistenteError } from "./01_classe_excecoes";
 
+export { Conta, Poupanca, Banco}
+
 class Conta {
     private _numero: string;
     private _saldo: number;

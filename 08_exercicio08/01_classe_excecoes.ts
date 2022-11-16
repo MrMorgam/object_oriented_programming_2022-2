@@ -1,4 +1,4 @@
-export { ContaInexistenteError, SaldoInsuficienteError, ValorInvalidoError, 
+export { AplicacaoError, ContaInexistenteError, SaldoInsuficienteError, ValorInvalidoError, 
          PoupancaInvalidaError, ContaJaExistenteError }
 
 class AplicacaoError extends Error {

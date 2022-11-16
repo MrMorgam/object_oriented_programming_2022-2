@@ -19,5 +19,8 @@
   "homepage": "https://github.com/MrMorgam/prog_orient_a_obj_2022_2#readme",
   "dependencies": {
     "prompt-sync": "^4.2.0"
+  },
+  "devDependencies": {
+    "@types/prompt-sync": "^4.2.0"
   }
 }

@@ -1,0 +1,2 @@
+Ocorre um erro, mostrando que os métodos da classe abstrata não foram implementados na classe concreta 
+herdeira.

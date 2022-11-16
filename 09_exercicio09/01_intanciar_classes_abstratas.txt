@@ -1,0 +1,2 @@
+Não podemos instanciar classes abstratas, pois estas são apenas idealizam de forma genérica um tipo e 
+precisam ser extendidas para que tenham uso real no sistema. 
